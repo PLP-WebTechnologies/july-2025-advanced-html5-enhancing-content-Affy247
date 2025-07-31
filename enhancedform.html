@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced HTML5 Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Enhanced HTML5 Page</h1>
+    <p>This page demonstrates structured content, forms, and semantic layout.</p>
+  </header>
+
+  <main>
+    <section id="lists">
+      <h2>My Daily Tech Activities</h2>
+
+<h3>Unordered List: Tech Stack I’m Learning</h3>
+<ul>
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>Git & GitHub</li>
+  <li>JavaScript (Next!)</li>
+</ul>
+
+<h3>Ordered List: My Learning Schedule</h3>
+<ol>
+    <li> Attend LMS class sessions</li>
+  <li>Watch tutorial videos</li>
+  <li>Practice daily challenges, prompt Ai to assist</li>
+  <li>Build small projects</li>
+  <li>Celebrate small wins</li>
+</ol>
+
+<h3>Description List: Key Tools and Their Purpose</h3>
+<dl>
+  <dt>VS Code</dt>
+  <dd>A lightweight code editor for writing and testing HTML/CSS/JS.</dd>
+
+  <dt>Git</dt>
+  <dd>A version control system to manage code history.</dd>
+
+  <dt>GitHub</dt>
+  <dd>An online platform to host and collaborate on code projects.</dd>
+</dl>
+
+    </section>
+
+    <section id="table">
+      <h2>Weekly Learning Progress</h2>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Week</th>
+      <th>Topic</th>
+      <th>Hours Spent</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>HTML Basics</td>
+      <td>8</td>
+      <td>Completed ✅</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Semantic HTML</td>
+      <td>6</td>
+      <td>Completed ✅</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Forms and Accessibility</td>
+      <td>5</td>
+      <td>In Progress 🔄</td>
+    </tr>
+  </tbody>
+</table>
+
+    </section>
+
+    <section id="media">
+      <section id="media">
+  <h2>Media Section</h2>
+  <figure>
+    <img src="just.jpg" alt="A descriptive alt text" width="300">
+    <figcaption>This is an image used in the enhanced HTML example.</figcaption>
+  </figure>
+
+  <audio controls>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <video width="400" controls>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+    </section>
+
+    <section>
+  <h2>Registration Form</h2>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required autocomplete="name"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="e.g. user@example.com" required autocomplete="email"><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Choose a strong password" required minlength="6" autocomplete="new-password"><br><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="1" max="120" required><br><br>
+    </fieldset>
+<div></div>
+    <fieldset>
+      <legend>Preferences</legend>
+
+      <p>Gender:</p>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label><br><br>
+
+      <label for="country">Select Country:</label>
+      <select id="country" name="country" required>
+        <option value="">--Please choose--</option>
+        <option value="nigeria">Nigeria</option>
+        <option value="ghana">Ghana</option>
+        <option value="kenya">Kenya</option>
+      </select><br><br>
+
+      <p>Skills:</p>
+      <input type="checkbox" id="html" name="skills" value="html">
+      <label for="html">HTML</label>
+
+      <input type="checkbox" id="css" name="skills" value="css">
+      <label for="css">CSS</label>
+
+      <input type="checkbox" id="js" name="skills" value="js">
+      <label for="js">JavaScript</label><br><br>
+    </fieldset>
+<div></div>
+    <fieldset>
+      <legend>Comments</legend>
+      <label for="comments">Anything else you'd like to say?</label><br>
+      <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Leave a comment..."></textarea>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Submit Form">
+    <input type="reset" value="Clear Form">
+  </form>
+</section>
+
+
+    <section id="form">
+      <section>
+  <h2>Contact Me</h2>
+  <form action="#" method="post" autocomplete="on">
+    <fieldset>
+      <h4>Personal Details</h4>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
+
+      <br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+      <br><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="08123456789" required>
+
+    </fieldset>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 by Affyy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
